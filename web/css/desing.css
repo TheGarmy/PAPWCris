@@ -1,0 +1,325 @@
+/* HOJA DE ESTILO DE INDEX, INDEX LOGGED*/
+
+body{
+
+font-family: "Verdana";
+margin-top: 0;
+margin-left: auto;
+margin-right: auto;
+background:-webkit-linear-gradient(top,rgb(163,144,189), rgb(47,9,99));
+}
+
+.navigator{
+width: 100%;
+height: 9%;
+position: fixed;	
+box-shadow: 2px 2px 10px black;
+color: rgb(207,209,208);
+background:-webkit-linear-gradient(top,rgb(247,247,247), rgb(236,235,234));
+}
+
+.navcontent{
+margin-left: 15%;
+}
+
+.navcontent2{
+margin-top: -42px;
+margin-right: 20px; 
+margin-left: 15%;
+}
+
+.iconP{
+background: url(../img/logo2.png);
+border: 0;
+background-size: 80px 60px;
+background-repeat: no-repeat;
+margin-top: -1px;
+margin-right: 5%;
+width: 80px;
+height: 55px;
+}
+
+.iconP:hover{
+cursor: pointer;
+}
+
+h1{
+text-align: center;
+}
+
+#subirvideo{
+	width: 200px;
+	font-size: 15px;
+	margin-left: 40%;
+}
+
+#video{
+	margin-left: 10%;
+}
+
+#titlevideo{
+	border: 0;
+	font-size: 30px;
+	margin-left: 5%;
+}
+
+#titlevideo2{
+	border-color: black;
+	font-size: 30px;
+	margin-left: 5%;
+	border-width: 1px;
+}
+#autorvideo{
+	border: 0;
+	font-size: 20px;
+	margin-left: 10%;
+}
+
+#vistas{
+	margin-left: 10%;
+	font-size: 12px;
+}
+
+#views{
+	border: 0;
+	font-size: 18px;
+}
+
+#barritainfo{
+	margin-left: 30%;
+}
+
+#viewlike{
+	border: 0;
+	width: 30px;
+	font-size: 18px;
+}
+
+#viewfav2{
+	border: 0;
+	width: 30px;
+	font-size: 18px;
+}
+
+#follow{
+	background-color: #3E0577;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#seguirts{
+	margin-top: -5%;
+	margin-left: 5%;
+
+}
+
+#boxi{
+
+	margin-left: 10%;
+	margin-top: -5%;
+}
+
+#coment{
+
+width:70%;
+height:20px;
+padding-bottom: 40px;
+font-size: 14px;
+}
+
+#coment2{
+	background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#movcoment2{
+	margin-left: 75%;
+
+}
+
+.searchs{
+width:500px;
+height:25px;
+font-size: 16px;
+margin-top: -2px;
+}
+
+.magnifying{
+
+margin-top: 8px;
+
+}
+
+label {
+	margin-left: -5%;
+}
+
+#lista {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#coment-section{
+margin-left: 10%;
+}
+
+li{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.glass {
+background: url(../img/lupa.png);
+background-color:rgb(47,9,99);
+background-size: 75px 22px;
+background-repeat: no-repeat;
+border-width: 1px;
+border-radius: 5px;
+width: 40px;
+height: 25px;
+margin-top: 5px;
+}
+
+.glass:hover{
+	cursor: pointer;
+
+}
+
+.divider {
+width: 50%;
+height: 10%;
+}
+
+.container{
+	border-width: 2px;
+	width: 920px;
+	height: auto;
+	margin-left: 15%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.signin{
+	margin-left: 10%;
+	font-size: 14px;
+	/*font-family: 'Krungthep'; */
+	font-family: 'Verdana';
+	color: rgb(47,9,99);
+	width:100px;
+	height:30px;
+}
+
+.signin:hover{
+
+	cursor: pointer;
+}
+
+.signin2{
+	margin-left: 10%;
+	background: url(../img/bell.png);
+	background-repeat: no-repeat;
+	background-size: 30px; 
+	border: 0;
+	width:40px;
+	height:30px;
+}
+
+.signin2:hover{
+
+	cursor: pointer;
+}
+
+.signin3{
+	margin-left: -12%;
+	background: url(../img/user.png);
+	background-repeat: no-repeat;
+	background-size: 30px; 
+	border: 0;
+	width:40px;
+	height:30px;
+}
+
+.signin3:hover{
+
+	cursor: pointer;
+}
+
+
+.person {
+
+margin-left: 8%;
+
+}
+
+span{
+
+font-size: 12px;
+
+}
+
+span:hover{
+
+	cursor: pointer;
+
+}
+
+.titles {
+
+	border: 0;
+	font-size: 20px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.fontsubtitle {
+
+	font-size: 14px;
+	font-weight: strong;
+	border: 0;
+	width: 200px;
+	height: auto;
+	margin-left: 18px;
+}
+
+.fontsubtitle:hover{
+ 	cursor: pointer;	
+}
+
+.fontsubtitle2 {
+
+	font-size: 10px;
+	border: 0;
+	width: 200px;
+	height: auto;
+	color: gray;
+	margin-left: 18px;
+}
+
+.fontsubtitle2:hover{
+ 	cursor: pointer;	
+}
+
+.preview {
+
+	margin-left: 20px;
+
+}
+
