@@ -8,6 +8,10 @@
         <servlet-name>Clogin</servlet-name>
         <servlet-class>controlador.CLogin</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CSubirArchivo</servlet-name>
+        <servlet-class>controlador.CSubirArchivo</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>GenerarUsuario</servlet-name>
         <url-pattern>/generarusuario.do</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>Clogin</servlet-name>
         <url-pattern>/clogin.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CSubirArchivo</servlet-name>
+        <url-pattern>/CSubirArchivo</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
