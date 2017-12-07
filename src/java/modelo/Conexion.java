@@ -16,9 +16,15 @@ import javax.swing.JOptionPane;
  */
 public class Conexion {
     private Connection con = null;
+    /*
+    //Compu Cris
     private String url = "jdbc:mysql://localhost:8889/artubebd";
     private String user = "root";
     private String password = "root";
+    */
+    private String url = "jdbc:mysql://localhost:3306/artubebd";
+    private String user = "root";
+    private String password = "";
 
     public Conexion() throws SQLException {
         try {
