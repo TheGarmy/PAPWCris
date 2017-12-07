@@ -46,17 +46,17 @@
 
             <h1>¡Sube un video!</h1>
  
-  <form>
-        <input type="file" id="subirvideo" name="Subirvideo" placeholder="Seleccionar video">
+  <form method="post" action="/arTube/CSubirArchivo" enctype="multipart/form-data">
+        <input type="file" id="subirvideo" name="file" placeholder="Seleccionar video">
            </br>    </br>
            </br>
-
-
+           
            <div id="video">
            <img src="../img/1.jpg" width="700px" height="420px"> 
            </div>
-               <br> 
+           <br> 
        <input type="text" id="titlevideo2" name="TitulodelVideo" placeholder="Titulo del Video">
+       <input type="submit" name="send" value="Enviar datos" />
         
   </form>  
     <br>

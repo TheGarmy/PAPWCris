@@ -8,6 +8,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
+        <%!
+            String pat = "";
+        %>
+        <%
+            if(request.getAttribute("urlVideo") != null){
+                pat = (String) request.getAttribute("urlVideo");
+                 response.sendRedirect("jsp/videopreview.jsp");
+            }
+           
+        %>
+        
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link rel="stylesheet" type="text/css" href="../css/desing.css">
         
@@ -53,7 +65,10 @@
         <br>
         
     <div id="video">
-    <img src="../img/1.jpg" width="700px" height="420px"> 
+        <video width="700px" height="420px" controls>
+            <source src=<%=pat%> type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
     </div>
 
         <span id="vistas">Vistas
