@@ -34,71 +34,115 @@
 
 <!-- Saltos-->
 </br>	
-</br>
-
 	<!-- Contenedor principal -->
  <div class = "container"> 
 
-	<!-- Imagen de usuario -->
-	<img src="../img/1.jpg" class="fondo" id ="photoback" height="80" width="80">	
+<!-- Imagen de usuario -->
+        <span class="photo-user" >
+        <img src="../img/wall.png" class="fondo" id ="photoback" height="80" width="80">	
+        </span>
 
-<div class="userinfo">
-	<img src="../img/user.png" class="userpic" id ="photoUS" height="80" width="80">	
+        <span id="carga-picuser2">
+        <input type="file" name="file-7[]" id="file-72" class="inputfile2 inputfile-62" data-multiple-caption="{count} files selected" multiple />
+	<label class ="archivo" id= "archivo2" for="file-7"><span></span><strong><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"></svg>Selecciona un archivo</strong></label>
+        </span>        
+
+</br>
+
+        <span>   
+         <img src="../img/pencil.png" class="pencil" id ="editado" title="Edita tu informacion" height="30" width="30">  &nbsp;
+        <input type="button" class="ido" id="save-change" name="confirmed" value="GUARDAR CAMBIOS" readonly> 
+        </span>
+
+        <div id="edita">Edita tu perfil</div>
+<!--     
+   -->
+   </br>
+        </br>
+	</br>
+	</br>
+        </br>
+	</br>
+	</br>
+        </br>
+	        
+        <div class="userinfo">
+            <img id ="photoUS" class="userpic" alt ="PP" src="../img/user.png" width="50" height="50">	
  	<div class="movetext"><input class="username" type="textbox" name="Username" placeholder="Tu nombre aqui" readonly></div>
-</div>
+        </div> 
+                </br>
+        </br>
+
+<span id="carga-picuser">
+        <input type="file" name="file-7[]" id="file-7" class="inputfile inputfile-6" data-multiple-caption="{count} files selected" multiple />
+	<label id= "archivo" for="file-7"><span></span><strong><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"></svg>Selecciona un archivo</strong></label>
+</span>
  	<!-- Saltos-->
 	</br>
 	</br>	
 
-	<div class="process">
-			<span> Información personal </span>
-			</br>	
-			</br>	
-
-			<span class="largetext"> Nombre de Usuario </span>
-			<input type="textbox" class="infobox2" name="email" placeholder="Ej. art3tube@xxx">
+        
+       
+	
+   <div class="process">
+           <span class="infotitle"> INFORMACIÓN PERSONAL </span>
+            
+           <div class ="movprocess">	
+                    	</br>	
+                        <span class="largetext"> Nombre de Usuario </span>
+			<input type="textbox" id="infobox2" class="infobox2" name="email" placeholder="Ej. art3tube@xxx">
 			</br>
 			</br>
-			
+                        
 			<span class="sizetext">Contraseña</span>	
-			<input type="password" class="infobox2" name="pass" placeholder="Minimo 8 caracteres">
-			<img src="../img/eye.png" class = "eyepass" width="30px" height="20px">
+			<input type="password" id="infobox3"  class="infobox2" name="pass" placeholder="Minimo 8 caracteres">
+			<div class = "eyepass"> <img src="../img/eye.png"  width="30px" height="30px"> </div>
 			</br>
 			</br>	
 
-			<span> </span>
-			<input type="textbox" class="infobox" name="email" placeholder="Ej. art3tube@xxx">
+			<span class="sizetext">Direccion</span>
+			<input type="textbox" id="infobox4" class="infobox2" name="email" placeholder="Ej. Wolfstreet 478">
 			</br>
 			</br>
-			
-		<!-- 
-			<span class="promo">¿No tienes cuenta? Registrate aqui</span>	
-
-			-->
 		
 		<!-- Saltos-->
 			</br>
 			</br>
 
-			<input type="button" class="ido" name="confirmed" value="GUARDAR CAMBIOS" readonly>
-	</div>
+			
+           </br></br></br> 
+           </div>
+          </div>
 
 <!-- Saltos-->
 	</br>
 	</br>
 	</br>
-
+        </br>
+	</br>
+	</br>
+        </br>
+	</br>
+	</br>
+        </br>
+	</br>
+	</br>
+        </br>
+	</br>
+	</br>
+        </br>
+	</br>
+        </br>
+	</br>
+	</br>
+        </br>
+	
 </div>
 
 <!-- Saltos-->
-		<img src="../img/logo2.png" class="logopic" id ="photologo" height="80" width="80">	
- 
-<!-- Saltos-->
-	</br>
-	</br>
-
  <script language="javascript" type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
  <script language="javascript" type="text/javascript" src="../js/scripts.js"></script>
+ <script src="../js/custom-file-input.js"></script>
  <script language="javascript" type="text/javascript" src="../js/jquery.qtip.min.js"></script>
  <script language="javascript" type="text/javascript" src="../js/notify.js"></script>
  
