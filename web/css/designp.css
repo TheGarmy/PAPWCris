@@ -12,7 +12,6 @@ height: 900px;
 .container{
 	border-width: 2px;
 	width: 800px;
-	height: auto;
 	background-color: white;
 	border-radius: 10px;
 	margin-left: 20%;
@@ -32,42 +31,65 @@ h2{
 
 }
 
-.process{
+.infotitle{
+font-size: 18px;
+margin-left: 5%;
+color: white;
+}
 
-	margin-left: 25%;
+.process{
+	margin-left: 20%;
+	background-color: black;
+	border-width: 1px;
+	border-radius: 5px;
+	width: 60%;
+	height: 20px;
+}
+
+.movprocess{
+	background-color: #846D9C;
+	width: 100%;
 }
 
 .largetext{
 
 	font-size: 12px;
-	margin-left: -8%;
+	margin-left: 15%;
 }
 
 .sizetext{
 
 font-size: 12px;
-
+margin-left: 15%;
 }
 
-.infobox{
-
-	width: 350px;
+#infobox2{
+margin-left: 15%;
+	width: 340px;
 	height: 30px;
 }
 
-.infobox2{
-
-	width: 320px;
+#infobox3{
+margin-left: 15%;
+	width: 340px;
 	height: 30px;
 }
 
+#infobox4{
+margin-left: 15%;
+	width: 340px;
+	height: 30px;
+}
+
+/*----------------------------*/
 .ido{
 
 border-width: 0;
 border-radius: 5px;
-width: 200px;
+width: 160px;
 height: 40px;
-margin-left: 70px;
+margin-top: -5%;
+font-size: 12px;
 
 }
 
@@ -76,12 +98,8 @@ margin-left: 70px;
 }
 
 .eyepass {
-background-color: white;
-background-size: 30px;
-background-repeat: no-repeat;
-border-width: 0;
-width: 35px;
-height: 25px;
+margin-top: -6%;
+margin-left: 80%;
 }
 
 .eyepass:hover{
@@ -116,6 +134,152 @@ margin-top: -80px;
 
 cursor: pointer;
 
+}
+
+.pencil{
+	cursor: pointer;
+	margin-left: 75%;
+}
+
+#carga-picuser{
+	margin-left: 10%;
+	margin-top: 10%;
+}
+
+#carga-picuser2{
+	margin-left: 10%;
+}
+
+
+/*-----------------*/
+
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfil .inputfile-6 {
+    font-size: 10px;
+    /* 20px */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile-6 + label {
+    color: black;
+}
+
+.inputfile-6 + label {
+    border: 1px solid #CAC9C9;
+    background-color: #E5E5E5;
+}
+
+.inputfile-6 + label span {
+    width: 80px;
+    height: 20px;
+    min-height: 2em;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.inputfile-6 + label strong {
+    border: 1px solid #CAC9C9;
+    padding-top: -10px;
+    font-size: 10px;
+    width: 20%;
+    height: 25px;
+    color: black;
+    background-color: rgb(236,235,234);
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/*----------------------------*/
+
+.js .inputfile2 {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile2 .inputfile-62 {
+    font-size: 10px;
+    /* 20px */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile2 + label {
+    display: none;
+}
+
+.inputfile2:focus + label,
+.inputfile2.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile-62 + label {
+    color: black;
+}
+
+.inputfile-62 + label {
+    border: 1px solid #CAC9C9;
+    background-color: #E5E5E5;
+}
+
+.inputfile-62 + label span {
+    width: 80px;
+    height: 20px;
+    min-height: 2em;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.inputfile-62 + label strong {
+    border: 1px solid #CAC9C9;
+    padding-top: -10px;
+    font-size: 10px;
+    width: 20%;
+    height: 25px;
+    color: black;
+    background-color: rgb(236,235,234);
+    display: inline-block;
+    cursor: pointer;
 }
 
 /*----------------*/
@@ -216,7 +380,7 @@ height: 10%;
 
 .signin2{
 	margin-left: 10%;
-	background: url(../img/bell.png);
+	background: url(../img/exit.png);
 	background-repeat: no-repeat;
 	background-size: 30px; 
 	border: 0;
@@ -250,17 +414,23 @@ margin-left: 8%;
 
 }
 
+#edita{
+	margin-left: 80%;
+	margin-top: -3%;
+	font-size: 13px;
+}
+
 /*----------------*/
 
 .fondo{
 
-width: 800px;
-height: 180px;
+width: 920px;
+height: 200px;
 
 }
 
 .userinfo{
-margin-top: 5px;
+margin-top: -15%;
 margin-left: 10%;
 width: 300px;
 }
@@ -280,9 +450,14 @@ margin-top: -20%;
 
 }
 
+.photo-user{
+	width: 100px;
+	height: 100px;
+}
+
 .userpic{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
  }
 
 .logopic{

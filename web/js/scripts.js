@@ -12,6 +12,14 @@ NOTAS
  
 $(document).ready(function() {
 
+	//----
+	$('#save-change').hide();
+	$('.movprocess').show();
+	$('#carga-picuser').hide();
+	$('#carga-picuser2').hide();
+	$('#file-7').hide();
+	$('#file-72').hide();
+
 /*	
 	$(".regular").slick({
         dots: false,
@@ -50,9 +58,7 @@ $(document).ready(function() {
 }, function(){
     $(this).attr("src", function(index, attr){
         return attr.replace("b.png", ".png");
-    });
-});
-
+    });});
 $("#icono4").hover(function(){
     $(this).attr("src", function(index, attr){
         return attr.replace(".png", "b.png");
@@ -60,9 +66,7 @@ $("#icono4").hover(function(){
 }, function(){
     $(this).attr("src", function(index, attr){
         return attr.replace("b.png", ".png");
-    });
-});
-
+    });});
 $("#icono5").hover(function(){
     $(this).attr("src", function(index, attr){
         return attr.replace(".png", "b.png");
@@ -70,9 +74,7 @@ $("#icono5").hover(function(){
 }, function(){
     $(this).attr("src", function(index, attr){
         return attr.replace("b.png", ".png");
-    });
-});
-
+    });});
 $("#icono6").hover(function(){
     $(this).attr("src", function(index, attr){
         return attr.replace(".png", "b.png");
@@ -105,6 +107,8 @@ $('.signin2').hover(function() {
 });
 
 */
+
+
 
 
  $('#logo').on('click',function(){
@@ -293,13 +297,55 @@ if (siono4 == true) {
 		}
 	}
 });
+//------
 
+var cambioPen = true;
+var siono5 = true;
+var cambioPen2 = true ;
+
+$('#editado').on('click', function(){  
+
+	if (cambioPen2 ==true) {  
+			 $('#editado').attr('src','../img/pencil2.png');
+			    siono5 = false;
+				cambioPen2 = false;
+				$('#carga-picuser').show();
+				$('#carga-picuser2').show();
+				$('#save-change').show();
+				$('#edita').hide();
+	} else {
+		 $('#editado').attr('src','../img/pencil.png');
+			$('#editado').prop('value', 'SEGUIR');
+				siono5 = true;	
+				$('#carga-picuser').hide();
+				$('#carga-picuser2').hide();
+				$('#save-change').hide();
+				$('#edita').show();
+				cambioPen2 = true;	
+	}
+
+});
+	
+
+$('#editado').hover(function(){    
+if (siono5 == true) {
+	    if( cambioPen == true){ 
+		   $('#editado').attr('src','../img/pencil2.png');
+		    cambioPen = false;
+		} else {
+			 $('#editado').attr('src','../img/pencil.png');
+		    cambioPen = true;
+		}
+	}
+});
+//-----------------
 
 $('#coment2').on('click', function(){
 	var score = $("#coment").val();
 
 		$("#coment-section").append( "<br>" + "<li id='cadacomentario' >" + score + "</li>" + "<br>");	
 });
+
 
 $('#cadacomentario').live(function(){
 
@@ -308,7 +354,21 @@ $('#cadacomentario').live(function(){
 });
 
 
-/*	
+function mostrarImagen(input) {
+	 if (input.files && input.files[0]) {
+	  var reader = new FileReader();
+	  reader.onload = function (e) {
+	   $('#photoUS').attr('src', e.target.result);
+	  }
+	  reader.readAsDataURL(input.files[0]);
+	 }
+}
+ 
+$(".file-7").change(function(){
+ mostrarImagen(this);
+});
+/*
+	
 	$('.cantidadPagoLarge').qtip({
 		style: {
 			classes: 'qtipClass',
