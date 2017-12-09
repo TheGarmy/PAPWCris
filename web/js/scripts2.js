@@ -14,8 +14,6 @@ $(document).ready(function() {
 
 //<a href="index.jsp" style = "text-decoration: none;"></a>
 
-
-
  $('#logo').on('click',function(){
 	window.location.href='../index.jsp';
     });
@@ -38,7 +36,9 @@ $(document).ready(function() {
 		}
 	);
 	
-var mostrar = true;
+
+//$('#iconP').one('hover', function(){
+	var mostrar = true;
 
 if (mostrar == true) {
 	 
@@ -51,8 +51,10 @@ if (mostrar == true) {
 		}
 	);
 
-	mostrar = false;
-}
+	}
+//});
+
+
 	//var nombre = "Garmy";
 
 	

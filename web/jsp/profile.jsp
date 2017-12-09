@@ -5,6 +5,18 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page session="true"%>
+<%!
+    String nombre;
+    String idUsuario;
+%>
+<%
+    HttpSession sesion = request.getSession();
+    nombre = (String)sesion.getAttribute("nombre");
+    idUsuario = sesion.getAttribute("idUsuario").toString();
+    
+    
+%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -68,7 +80,7 @@
 	        
         <div class="userinfo">
             <img id ="photoUS" class="userpic" alt ="PP" src="../img/user.png" width="50" height="50">	
- 	<div class="movetext"><input class="username" type="textbox" name="Username" placeholder="Tu nombre aqui" readonly></div>
+ 	<div class="movetext"><input class="username" id="change-username" type="textbox" name="Username" value="<%=nombre%>" readonly></div>
         </div> 
                 </br>
         </br>
@@ -90,23 +102,23 @@
            <div class ="movprocess">	
                     	</br>	
                         <span class="largetext"> Nombre de Usuario </span>
-			<input type="textbox" id="infobox2" class="infobox2" name="email" placeholder="Ej. art3tube@xxx">
+                        <input type="textbox" id="infobox2" class="infobox2" name="email" placeholder="Ej. art3tube@xxx" disabled>
 			</br>
 			</br>
                         
 			<span class="sizetext">Contraseña</span>	
-			<input type="password" id="infobox3"  class="infobox2" name="pass" placeholder="Minimo 8 caracteres">
-			<div class = "eyepass"> <img src="../img/eye.png"  width="30px" height="30px"> </div>
+			<input type="password" id="infobox3"  class="infobox2" name="pass" placeholder="Minimo 8 caracteres" disabled >
+			<div class = "eyepass" id="eyepass" > <img src="../img/eye.png"  width="30px" height="30px"> </div>
 			</br>
 			</br>	
 
 			<span class="sizetext">Direccion</span>
-			<input type="textbox" id="infobox4" class="infobox2" name="email" placeholder="Ej. Wolfstreet 478">
+			<input type="textbox" id="infobox4" class="infobox2" name="email" placeholder="Ej. Wolfstreet 478" disabled>
 			</br>
 			
 			</br>
                         <span class="sizetext">Fecha de nacimiento</span>
-			<input type="textbox" id="infobox4" class="infobox2" name="email" placeholder="Ej. 12 de Noviembre">
+			<input type="textbox" id="infobox4" class="infobox2" name="email" placeholder="Ej. 12 de Noviembre" disabled>
                         
            </br></br></br> 
            </div>
