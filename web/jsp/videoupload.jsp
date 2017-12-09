@@ -14,8 +14,23 @@
         <title>ART3TUBE</title>
         
     </head>
-    <body>      
+    <body>
+        <%!
+            String nombre;
+            String idUsuario;
+        %>
+        <%
 
+            if (request.getSession() != null) {
+                HttpSession sesion = request.getSession();
+                nombre = (String) sesion.getAttribute("nombre");
+                idUsuario = sesion.getAttribute("idUsuario").toString();
+            } else {
+                response.sendRedirect("jsp/iniciarSesion.jsp");
+            }
+
+
+        %>
 <!-- Barra de navegación -->
 	<div class = "navigator">
 		<div class="navcontent" >
@@ -56,6 +71,7 @@
            </div>
            <br> 
        <input type="text" id="titlevideo2" name="TitulodelVideo" placeholder="Titulo del Video">
+       <input type="hidden" value="<%=idUsuario%>" name="idInput"/> 
        <input type="submit" name="send" value="Enviar datos" />
         
   </form>  

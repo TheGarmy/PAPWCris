@@ -38,10 +38,12 @@
                         if (nivel == 1) {
                             sesion.setAttribute("nombre", request.getAttribute("nombre"));
                             sesion.setAttribute("nivel", nivel);
+                            sesion.setAttribute("idUsuario", request.getAttribute("idUsuario"));
                             response.sendRedirect("jsp/indexAdmin.jsp");
                         } else {
                             sesion.setAttribute("nombre", request.getAttribute("nombre"));
                             sesion.setAttribute("nivel", nivel);
+                            sesion.setAttribute("idUsuario", request.getAttribute("idUsuario"));
                             response.sendRedirect("jsp/indexlogged.jsp");
                         }
                     
