@@ -29,6 +29,7 @@ $(document).ready(function() {
 	});
 
 
+
 	$.notify("Termina de editar tu perfil", "warn",
 		{
 			position:"top right",
@@ -36,8 +37,12 @@ $(document).ready(function() {
 
 		}
 	);
+	
+var mostrar = true;
 
-	var nombre = "Garmy";
+if (mostrar == true) {
+	 
+	var nombre = $('#nombre-admin').val();
 
 	$.notify('Bienvenido ' + nombre, "success",
 		{
@@ -45,6 +50,14 @@ $(document).ready(function() {
 
 		}
 	);
+
+	mostrar = false;
+}
+	//var nombre = "Garmy";
+
+	
+
+
 	
 }); // DOCUMENT READY NO BORRAR
 

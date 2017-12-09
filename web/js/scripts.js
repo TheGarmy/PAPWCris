@@ -19,6 +19,7 @@ $(document).ready(function() {
 	$('#carga-picuser2').hide();
 	$('#file-7').hide();
 	$('#file-72').hide();
+	$('#nombre-admin').hide();
 
 /*	
 	$(".regular").slick({
@@ -168,7 +169,7 @@ $('#ido2').on('click', function() {
 	
 });
 
-$('.signin2').qtip({
+$('.signin3').qtip({
 		style: {
 			classes: 'qtipClass',
 			width: 90,
@@ -176,6 +177,14 @@ $('.signin2').qtip({
 
 		}
 	});
+
+$('.exit2').on('click', function(){
+	window.location.href='../jsp/indexlogged.jsp';
+});
+
+$('.signin2').on('click', function(){
+	window.location.href='../index.jsp';
+});
 
 $('.signin3').on('click', function(){
 	window.location.href='profile.jsp';

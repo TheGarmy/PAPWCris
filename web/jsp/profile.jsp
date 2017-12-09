@@ -17,7 +17,7 @@
 <!-- Barra de navegación -->
 	<div class = "navigator">
 		<div class="navcontent" >
-			<input type="button" class = "iconP" name="logo" readonly>
+			<input type="button" class="exit2" id = "iconP" name="logo" readonly>
 			<div class = "navcontent2"> 
 			<input type="textbox" class = "searchs" name="Busqueda" placeholder= "Buscar">
 		<span class ="magnifying">
@@ -103,13 +103,11 @@
 			<span class="sizetext">Direccion</span>
 			<input type="textbox" id="infobox4" class="infobox2" name="email" placeholder="Ej. Wolfstreet 478">
 			</br>
-			</br>
-		
-		<!-- Saltos-->
-			</br>
-			</br>
-
 			
+			</br>
+                        <span class="sizetext">Fecha de nacimiento</span>
+			<input type="textbox" id="infobox4" class="infobox2" name="email" placeholder="Ej. 12 de Noviembre">
+                        
            </br></br></br> 
            </div>
           </div>

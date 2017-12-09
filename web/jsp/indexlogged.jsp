@@ -27,11 +27,12 @@
 
 </head>
 <body>
+     <input type="text" id="nombre-admin" value = "<%=nombre%>" </input>
     
 <!-- Barra de navegacion -->
 	<div class = "navigator">
 		<div class="navcontent" >
-			<input type="button" class = "iconP" name="logo" readonly>
+			<input type="button" class="exit2" id = "iconP" name="logo" readonly>
 			<div class = "navcontent2"> 
 			<input type="textbox" class = "searchs" name="Busqueda" placeholder= "Buscar">
 		<span class ="magnifying">
@@ -39,8 +40,8 @@
 		</span>
 				<span class="person">
                                     <img src="../img/subir.png" id="upload" width="20px" height="25px"> 
-			<input class="signin2" title="Tienes una nueva notificacion" id="usernoti" type="button" name="iconLog" readonly>
-			<input class="signin3" type="button" name="iconLog" readonly>
+			<input class="signin2"  id="usernoti" type="button" name="iconLog" readonly>
+			<input class="signin3" title="Tienes una nueva notificacion" type="button" name="iconLog" readonly>
 				</span>
 			</div>
 		</div>

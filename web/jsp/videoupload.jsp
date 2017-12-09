@@ -34,7 +34,7 @@
 <!-- Barra de navegación -->
 	<div class = "navigator">
 		<div class="navcontent" >
-			<input type="button" class = "iconP" name="logo" readonly>
+			<input type="button"class="exit2" id = "iconP" name="logo" readonly>
 			<div class = "navcontent2"> 
 			<input type="textbox" class = "searchs" name="Busqueda" placeholder= "Buscar">
 		<span class ="magnifying">
@@ -56,23 +56,22 @@
 
     </br>
         </br>
-    </br>
-            </br>
-
-            <h1>¡Sube un video!</h1>
+           <h1>¡Sube un video!</h1>
  
   <form method="post" action="/arTube/CSubirArchivo" enctype="multipart/form-data">
-        <input type="file" id="subirvideo" name="file" placeholder="Seleccionar video">
+     
+      <input type="file" id="subirvideo" name="file" placeholder="Seleccionar video">
            </br>    </br>
            </br>
-           
-           <div id="video">
+           <input type="text" id="titlevideo2" name="TitulodelVideo" placeholder="Titulo del Video">
+     </br>    </br>   
+     <div id="video">
            <img src="../img/1.jpg" width="700px" height="420px"> 
            </div>
            <br> 
-       <input type="text" id="titlevideo2" name="TitulodelVideo" placeholder="Titulo del Video">
-       <input type="hidden" value="<%=idUsuario%>" name="idInput"/> 
-       <input type="submit" name="send" value="Enviar datos" />
+      <input type="text" id="titlevideo3" name="DescripciondelVideo" placeholder="Descripcion del Video">
+      <br> <br> <br> 
+       <input type="submit" class="ido" name="send" value="Enviar datos" />
         
   </form>  
     <br>
