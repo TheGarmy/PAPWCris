@@ -3,13 +3,18 @@ package controlador;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
+import modelo.Beans.PublicacionVo;
+import modelo.Dao.PublicacionDao;
 
 /**
  *
@@ -27,9 +32,7 @@ public class CSubirArchivo extends HttpServlet {
             throws ServletException, IOException {
         
         RequestDispatcher rd = null;
-        String nombre = request.getParameter("email");
-        String descripcion = request.getParameter("pass");
-
+       
         // path absoluto de la aplicacion
         String appPath = request.getServletContext().getRealPath("");
         //path con el nombre de la carpeta
@@ -47,11 +50,24 @@ public class CSubirArchivo extends HttpServlet {
         fileName = new File(fileName).getName();
         filePart.write(savePath + File.separator + fileName);
 
-        String pat;
-        pat = ".." + File.separator + "uploadFiles" + File.separator + fileName;
-
-        request.setAttribute("urlVideo", pat);
-        rd=request.getRequestDispatcher("/jsp/videopreview.jsp");
+        Date date = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH-mm-ss");
+        System.out.print(sdf.format(date));
+        String fecha  = sdf.format(date);
+        String urlVideo = ".." + File.separator +  File.separator + "uploadFiles" + File.separator + File.separator + fileName;
+        String titulo = request.getParameter("TitulodelVideo");
+        Integer usuarioP = (Integer)request.getSession().getAttribute("idUsuario");
+     
+        PublicacionVo miPublicacion =  new PublicacionVo(fecha,titulo,urlVideo,usuarioP );
+        boolean guardo = PublicacionDao.guardarPublicacion(miPublicacion);
+        if (guardo) {
+            request.setAttribute("confirmacion", "subido");
+            request.setAttribute("urlVideo", miPublicacion.getVideoPublicacion());
+            request.setAttribute("titulo", miPublicacion.getTituloPublicacion());
+            rd=request.getRequestDispatcher("/jsp/videopreview.jsp");
+        } else {
+            rd=request.getRequestDispatcher("nocreado.jsp");
+        }
         rd.forward(request, response);
     }
     

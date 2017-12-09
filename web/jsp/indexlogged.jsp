@@ -8,10 +8,12 @@
 <%@page session="true"%>
 <%!
     String nombre;
+    String idUsuario;
 %>
 <%
     HttpSession sesion = request.getSession();
     nombre = (String)sesion.getAttribute("nombre");
+    idUsuario = sesion.getAttribute("idUsuario").toString();
     
     
 %>

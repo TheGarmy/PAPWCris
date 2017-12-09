@@ -11,10 +11,12 @@
         
         <%!
             String pat = "";
+            String Titulo = "";
         %>
         <%
             if(request.getAttribute("urlVideo") != null){
-                pat = (String) request.getAttribute("urlVideo");
+                 pat = (String) request.getAttribute("urlVideo");
+                 Titulo = (String) request.getAttribute("titulo");
                  response.sendRedirect("jsp/videopreview.jsp");
             }
            
@@ -61,7 +63,7 @@
 </br>
 </br>
     
-        <input type="text" id="titlevideo" name="TitulodelVideo" value="Titulo del Video" readonly>
+        <input type="text" id="titlevideo" name="TitulodelVideo" value=<%=Titulo%> readonly>
         <br>
         
     <div id="video">
